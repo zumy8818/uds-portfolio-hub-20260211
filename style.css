@@ -1,4 +1,17 @@
-/* 指定フォントの定義 */
+/* 基本設定 */
+:root {
+    --primary-color: #2563eb;
+    --text-color: #333;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+/* 指定フォントのクラス */
 .font-hira {
     font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシックProN W6", sans-serif;
     font-weight: 600;
@@ -12,9 +25,48 @@
     font-family: "HG明朝E", "HGP明朝E", "HGS明朝E", serif;
 }
 
-body {
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+/* ヒーローセクション */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #ffeb3b;
+    color: #333;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* コンテンツエリア */
+.container {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
